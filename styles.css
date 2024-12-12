@@ -195,3 +195,34 @@ footer {
     margin-top: auto;
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .collection {
+        grid-template-columns: 1fr;
+    }
+
+    .mission {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+}
