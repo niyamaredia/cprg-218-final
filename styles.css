@@ -1,62 +1,64 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.6;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product {
+        max-width: 100%;
+    }
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
-
+/* Navigation Menu */
 .nav-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
-
-.nav-menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
 .nav-menu a:hover {
     color: #f0a500;
+    text-decoration: underline;
+}
+.nav-menu a.active {
+    color: #f0a500;
+    font-weight: bold;
 }
 
-main {
-    padding: 2rem;
-    text-align: center;
+/* Product Section */
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.products {
+/* Contact Form */
+form {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+form input, form textarea, form button {
+    width: 100%;
+    max-width: 400px;
 }
 
-.product {
-    max-width: 300px;
-    background: #f4f4f4;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Theme Switcher */
+.theme-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #f0a500;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-
-footer {
+.theme-switcher.dark {
     background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
+    color: #f4f4f4;
 }
