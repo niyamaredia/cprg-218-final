@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - OFFLAC</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <title>OFFLAC - Contact</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav aria-label="Main navigation">
+        <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="collection.html">Collection</a></li>
@@ -23,20 +20,17 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <section class="contact">
             <h2>Contact Us</h2>
-            <form id="contact-form" novalidate>
+            <form id="contact-form">
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Name and Message" required>
-                    <span class="error-message" id="name-error"></span>
                 </div>
                 <div class="form-group">
                     <input type="email" id="email" name="email" placeholder="Email Address" required>
-                    <span class="error-message" id="email-error"></span>
                 </div>
-                <button type="submit" class="submit-btn">Submit</button>
-                <div id="success-message" class="success-message"></div>
+                <button type="submit">Submit</button>
             </form>
         </section>
     </main>
